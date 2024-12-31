@@ -1,0 +1,99 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules
+.pnp
+.pnp.js
+
+# Build output
+dist
+dist-ssr
+.out
+.next
+
+# Static assets cache
+.cache
+
+# Local environment files
+.env
+.env.*.local
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.iml
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux specific
+*~
+
+# Temporary files
+.fuse_hidden*
+.nfs*
+.directory
+
+# Testing and coverage
+coverage
+*.lcov
+
+# Next.js specific
+.next
+.next/cache
+
+# Vite specific
+.vite
+
+# npm packages lock files (optional, if not committing lock files)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore lint and formatting cache files
+.eslintcache
+.stylelintcache
+
+# Ignore temporary or system files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.pid
+*.seed
+*.pid.lock
+*.log
+
+# Ignore IDE-specific folders
+*.idea/
+*.vs/
+
+# Ignore local debug logs
+debug.log
