@@ -79,7 +79,7 @@ const blogPosts = [
 export default function Home() {
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText('pablo@example.com')
+      await navigator.clipboard.writeText('mail@pabluxdev.com')
       alert('Email copied to clipboard!')
     } catch (err) {
       console.error('Failed to copy email:', err)
