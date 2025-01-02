@@ -3,10 +3,12 @@
 import { motion } from 'framer-motion'
 import { Calendar, Copy } from 'lucide-react'
 import VerticalMarquee from '../components/VerticalMarquee'
+import profilePicture from '../assets/profilepic.png'
+import CssIcon from '../assets/cssicon.svg'
 
 const toolsData = [
   { name: 'HTML5', icon: '/html5.svg' },
-  { name: 'CSS3', icon: '/css3.svg' },
+  { name: 'CSS3', icon: {CssIcon} },
   { name: 'JavaScript', icon: '/javascript.svg' },
   { name: 'React', icon: '/react.svg' },
   { name: 'Bootstrap', icon: '/bootstrap.svg' },
@@ -121,9 +123,9 @@ export default function Home() {
       >
         <div className="aspect-square w-full max-w-[300px] mx-auto mb-6 rounded-2xl overflow-hidden">
           <img
-            src="/placeholder.svg?height=300&width=300"
+            src={profilePicture}
             alt="Profile"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
           />
         </div>
         <h2 className="text-2xl font-bold mb-2">
@@ -193,7 +195,7 @@ export default function Home() {
               className="aspect-square bg-secondary hover:bg-secondary/80 rounded-lg p-2 flex items-center justify-center transition-colors cursor-pointer"
             >
               <div className="w-8 h-8 bg-background rounded-md flex items-center justify-center">
-                <span className="text-xs">Icon</span>
+                <span className="text-xs">{toolsData.icon}</span>
               </div>
             </div>
           ))}
